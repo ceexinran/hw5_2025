@@ -108,23 +108,11 @@ Style the images in the gallery class. These elements will have a solid 10px bor
 
 /* Step #10
 Edit the css for the gallery class to use flex to match our example. (You may want to look at the screen shots from 1200px and 1500px as well -  the changes are not from media queries, but from the use of flex.)  */
-.gallery {
+.gallery{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.gallery img {
-    border: 10px solid #50C7C7;
-    margin: 10px;
-    height: 300px;
-    object-fit: cover;
-}
-
-@media (min-width: 1200px) {
-    .gallery img {
-        width: calc(50% - 20px);
-    }
+    align-items: stretch;
 }
 
 /* When the screen size is greater than 900px */
